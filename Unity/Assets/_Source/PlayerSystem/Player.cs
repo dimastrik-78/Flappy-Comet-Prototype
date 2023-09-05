@@ -1,10 +1,14 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using Utils;
 
 namespace PlayerSystem
 {
     public class Player : MonoBehaviour
     {
         [SerializeField] private Rigidbody2D rb;
+        [SerializeField] private LayerMask obstacle;
         
         private PlayerInputSystem _input;
         private Movement _movement;
@@ -27,6 +31,15 @@ namespace PlayerSystem
             _input.Action.Fly.canceled += _ => _movement.Fly();
             
             _input.Enable();
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (obstacle.Contains(other.gameObject.layer))
+            {
+                Debug.Log("Lose");
+                Time.timeScale = 0;
+            }
         }
     }
 }
