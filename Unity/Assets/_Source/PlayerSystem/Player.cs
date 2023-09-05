@@ -47,8 +47,7 @@ namespace PlayerSystem
         {
             if (bonus.Contains(other.gameObject.layer))
             {
-                Debug.Log("+");
-                // Signals.Get<TakeBonusSignal>().Dispatch();
+                Signals.Get<TakeBonusSignal>().Dispatch();
             }
         }
     }
