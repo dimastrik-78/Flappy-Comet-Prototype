@@ -1,18 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+namespace PlayerSystem
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Player : MonoBehaviour
     {
+        [SerializeField] private Rigidbody2D rb;
         
-    }
+        private PlayerInputSystem _input;
+        private Movement _movement;
 
-    // Update is called once per frame
-    void Update()
-    {
+        private bool _isPress;
         
+        void Awake()
+        {
+            _movement = new Movement(rb, transform);
+            _movement.Move();
+            
+            InputSetting();
+        }
+
+        private void InputSetting()
+        {
+            _input = new PlayerInputSystem();
+
+            _input.Action.Fly.started += _ => _movement.Fly();
+            _input.Action.Fly.canceled += _ => _movement.Fly();
+            
+            _input.Enable();
+        }
     }
 }
