@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0d7162-d665-4e54-bdec-6b8db5cecdcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/CameraSystem.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/CameraSystem/Camera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/CameraSystem/Camera.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/CameraSystem/Movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/CameraSystem/Movement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/UISystem.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/ScoreController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/ScoreController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/ScoreView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/ScoreView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Movement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Movement.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.6.3/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2UyRxW4iWtKOyKe5teYKWdcihnl" />
   <component name="ProjectViewState">
@@ -106,6 +100,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
