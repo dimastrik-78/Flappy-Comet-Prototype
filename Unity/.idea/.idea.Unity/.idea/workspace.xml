@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a0d7162-d665-4e54-bdec-6b8db5cecdcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/Utils/Event.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/Utils/Event/ResetSceneSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/Utils/Event/ResetSceneSignal.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/Game.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0a0d7162-d665-4e54-bdec-6b8db5cecdcf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +82,7 @@
       <updated>1693910083713</updated>
       <workItem from="1693910085716" duration="40000" />
       <workItem from="1693910802688" duration="1734000" />
-      <workItem from="1693915183694" duration="306000" />
+      <workItem from="1693915183694" duration="699000" />
     </task>
     <servers />
   </component>
