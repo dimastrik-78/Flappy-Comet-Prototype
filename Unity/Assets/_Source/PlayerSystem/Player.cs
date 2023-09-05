@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using Utils;
+using Utils.Event;
 
 namespace PlayerSystem
 {
@@ -37,8 +38,7 @@ namespace PlayerSystem
         {
             if (obstacle.Contains(other.gameObject.layer))
             {
-                Debug.Log("Lose");
-                Time.timeScale = 0;
+                Signals.Get<ResetSceneSignal>().Dispatch();
             }
         }
     }
