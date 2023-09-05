@@ -13,7 +13,7 @@ namespace ObstacleSystem
 
         public void Move(float speed)
         {
-            _transform.position = new Vector2(_transform.position.x, _transform.position.y * speed * Time.deltaTime);
+            _transform.position = new Vector2(_transform.position.x, _transform.position.y + speed * Time.deltaTime);
         }
     }
 }
