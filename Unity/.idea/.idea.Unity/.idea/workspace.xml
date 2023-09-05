@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0d7162-d665-4e54-bdec-6b8db5cecdcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Movement.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Obstacle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

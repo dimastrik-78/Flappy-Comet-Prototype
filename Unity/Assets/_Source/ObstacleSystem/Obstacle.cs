@@ -1,24 +1,28 @@
-using System;
 using UnityEngine;
-using Utils;
+using System;
+using Random = System.Random;
 
 namespace ObstacleSystem
 {
     public class Obstacle : MonoBehaviour
     {
-        [SerializeField] private float maxHeight;
-        [SerializeField] private float minHeight;
+        [SerializeField] private int maxHeight;
+        [SerializeField] private int minHeight;
         [SerializeField] private float speed;
 
+        private Random _random;
         private Movement _movement;
 
+        private int _maxHeight;
+        private int _minHeight;
         private bool _isUp = true;
         
         void Awake()
         {
+            _random = new Random();
             _movement = new Movement(transform);
             
-            FixHeight();
+            SetHeight();
         }
 
         private void Update()
@@ -37,7 +41,7 @@ namespace ObstacleSystem
         {
             _movement.Move(speed);
             
-            if (transform.position.y >= maxHeight)
+            if (transform.position.y >= _maxHeight)
             {
                 _isUp = false;
             }
@@ -47,31 +51,16 @@ namespace ObstacleSystem
         {
             _movement.Move(-speed);
             
-            if (transform.position.y <= minHeight)
+            if (transform.position.y <= _minHeight)
             {
                 _isUp = true;
             }
         }
 
-        private void FixHeight()
+        private void SetHeight()
         {
-            if (maxHeight > 4.5)
-            {
-                maxHeight = 4.5f;
-            }
-            else if (maxHeight < 0)
-            {
-                maxHeight = 0;
-            }
-            
-            if (minHeight < -4.5)
-            {
-                minHeight = -4.5f;
-            }
-            else if (minHeight > 0)
-            {
-                minHeight = 0;
-            }
+            _maxHeight = _random.Next(0, maxHeight);
+            _minHeight = _random.Next(minHeight, 0);
         }
     }
 }
