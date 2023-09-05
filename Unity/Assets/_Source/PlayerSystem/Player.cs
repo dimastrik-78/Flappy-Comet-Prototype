@@ -10,6 +10,7 @@ namespace PlayerSystem
     {
         [SerializeField] private Rigidbody2D rb;
         [SerializeField] private LayerMask obstacle;
+        [SerializeField] private LayerMask bonus;
         
         private PlayerInputSystem _input;
         private Movement _movement;
@@ -39,6 +40,15 @@ namespace PlayerSystem
             if (obstacle.Contains(other.gameObject.layer))
             {
                 Signals.Get<ResetSceneSignal>().Dispatch();
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (bonus.Contains(other.gameObject.layer))
+            {
+                Debug.Log("+");
+                // Signals.Get<TakeBonusSignal>().Dispatch();
             }
         }
     }
