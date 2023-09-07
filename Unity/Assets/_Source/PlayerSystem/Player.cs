@@ -1,9 +1,6 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using Utils;
 using Utils.Event;
-using Zenject;
 
 namespace PlayerSystem
 {

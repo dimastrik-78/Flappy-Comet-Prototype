@@ -6,22 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0a0d7162-d665-4e54-bdec-6b8db5cecdcf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Bonus/Bonus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Bonus/Bonus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Obstacle/Obstacle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Obstacle/Obstacle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Obstacle/boundaries.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Obstacle/boundaries.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Player/Circle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Player/Circle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/BonusSystem/Bonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/BonusSystem/Bonus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GenerationSystem/Generation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GenerationSystem/Generation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/LevelSystem/LevelObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/LevelObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/LevelSystem/Movement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/LevelSystem/Movement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/GameInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/LevelSystem/DisableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/DisableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Obstacle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Movement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/UISystem/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/Score.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/UISystem/ScoreView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/ScoreView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

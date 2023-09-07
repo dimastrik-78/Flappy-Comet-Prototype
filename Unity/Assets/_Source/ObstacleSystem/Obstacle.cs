@@ -1,7 +1,4 @@
 using UnityEngine;
-using System;
-using Utils;
-using Utils.Event;
 using Random = System.Random;
 
 namespace ObstacleSystem

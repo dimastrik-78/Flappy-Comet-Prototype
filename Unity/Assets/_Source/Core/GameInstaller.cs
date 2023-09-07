@@ -1,5 +1,4 @@
 using GenerationSystem;
-using PlayerSystem;
 using UISystem;
 using UnityEngine;
 using Zenject;
@@ -28,10 +27,6 @@ namespace Core
                 .AsSingle()
                 .WithArguments(minDistanceSpawn, maxDistanceSpawn)
                 .NonLazy();
-
-            // Container.Bind<Movement>()
-            //     .AsSingle()
-            //     .NonLazy();
         }
     }
 }

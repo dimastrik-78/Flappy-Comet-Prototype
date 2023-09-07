@@ -1,8 +1,5 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-using Utils;
-using Utils.Event;
 
 namespace UISystem
 {
