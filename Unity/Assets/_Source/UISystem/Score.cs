@@ -1,5 +1,6 @@
 ﻿using Utils;
 using Utils.Event;
+using Zenject;
 
 namespace UISystem
 {
@@ -9,23 +10,22 @@ namespace UISystem
         
         private readonly ScoreView _view;
         
+        [Inject]
         public Score(ScoreView view)
         {
             _view = view;
-            
-            SetEvent();
         }
 
-        private void SetEvent()
+        public void OnEvent()
         {
             Signals.Get<TakeBonusSignal>().AddListener(ScoreUpdate);
-            Signals.Get<ResetSceneSignal>().AddListener(DeleteEvent);
+            Signals.Get<ResetSceneSignal>().AddListener(DisEvent);
         }
 
-        private void DeleteEvent()
+        private void DisEvent()
         {
             Signals.Get<TakeBonusSignal>().RemoveListener(ScoreUpdate);
-            Signals.Get<ResetSceneSignal>().RemoveListener(DeleteEvent);
+            Signals.Get<ResetSceneSignal>().RemoveListener(DisEvent);
         }
 
         private void ScoreUpdate()

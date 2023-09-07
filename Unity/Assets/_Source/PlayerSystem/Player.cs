@@ -3,6 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Utils;
 using Utils.Event;
+using Zenject;
 
 namespace PlayerSystem
 {
@@ -17,25 +18,15 @@ namespace PlayerSystem
         private Movement _movement;
 
         private bool _isPress;
-        
+
         void Awake()
         {
-            _movement = new Movement(rb, transform, speed);
-            _movement.Move();
+            _movement = new Movement();
+            _movement.Move(rb, transform, speed);
             
             InputSetting();
         }
-
-        private void InputSetting()
-        {
-            _input = new PlayerInputSystem();
-
-            _input.Action.Fly.started += _ => _movement.Fly();
-            _input.Action.Fly.canceled += _ => _movement.Fly();
-            
-            _input.Enable();
-        }
-
+        
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (obstacle.Contains(other.gameObject.layer))
@@ -50,6 +41,16 @@ namespace PlayerSystem
             {
                 Signals.Get<TakeBonusSignal>().Dispatch();
             }
+        }
+
+        private void InputSetting()
+        {
+            _input = new PlayerInputSystem();
+            
+            _input.Action.Fly.started += _ => _movement.Fly(rb);
+            _input.Action.Fly.canceled += _ => _movement.Fly(rb);
+
+            _input.Enable();
         }
     }
 }

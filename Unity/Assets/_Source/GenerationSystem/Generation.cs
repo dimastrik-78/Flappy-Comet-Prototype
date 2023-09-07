@@ -1,6 +1,7 @@
 using UnityEngine;
 using Utils;
 using Utils.Event;
+using Zenject;
 using Random = System.Random;
 
 namespace GenerationSystem
@@ -11,16 +12,28 @@ namespace GenerationSystem
         private readonly int _minDistanceSpawn;
         private readonly int _maxDistanceSpawn;
 
+        [Inject]
         public Generation(int minDistanceSpawn, int maxDistanceSpawn)
         {
             _random = new Random();
             _minDistanceSpawn = minDistanceSpawn;
             _maxDistanceSpawn = maxDistanceSpawn;
-
-            OnEvent();
+        }
+        
+        public void GenerationGame(GameObject prefab, Transform position)
+        {
+            Object.Instantiate(prefab, position.position, position.rotation, null);
         }
 
-        private void OnEvent()
+        public void GenerationGame(GameObject prefab, int minDistance, int maxDistance, int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                Object.Instantiate(prefab, new Vector2(_random.Next(minDistance, maxDistance), 0), Quaternion.Euler(0, 0, 0));
+            }
+        }
+
+        public void OnEvent()
         {
             Signals.Get<SetObjectSignal>().AddListener(SetObject);
             Signals.Get<ResetSceneSignal>().AddListener(DisEvent);

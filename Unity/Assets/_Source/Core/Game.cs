@@ -7,12 +7,7 @@ namespace Core
 {
     public class Game
     {
-        public Game()
-        {
-            StartGame();
-        }
-        
-        private void StartGame()
+        public void StartGame()
         {
             Signals.Get<ResetSceneSignal>().AddListener(ResetScene);
         }
