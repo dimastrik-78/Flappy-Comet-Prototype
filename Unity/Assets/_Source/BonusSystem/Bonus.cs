@@ -13,7 +13,7 @@ namespace BonusSystem
         {
             if (player.Contains(other.gameObject.layer))
             {
-                gameObject.SetActive(false);
+                Signals.Get<SetObjectSignal>().Dispatch(gameObject);
             }
         }
     }

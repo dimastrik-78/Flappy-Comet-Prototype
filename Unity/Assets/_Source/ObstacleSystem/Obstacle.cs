@@ -1,5 +1,7 @@
 using UnityEngine;
 using System;
+using Utils;
+using Utils.Event;
 using Random = System.Random;
 
 namespace ObstacleSystem
@@ -17,12 +19,10 @@ namespace ObstacleSystem
         private int _minHeight;
         private bool _isUp = true;
         
-        void Awake()
+        private void Awake()
         {
             _random = new Random();
             _movement = new Movement(transform);
-            
-            SetHeight();
         }
 
         private void Update()
@@ -35,6 +35,12 @@ namespace ObstacleSystem
             {
                 MoveDown();
             }
+        }
+
+        private void OnEnable()
+        {
+            _maxHeight = _random.Next(0, maxHeight);
+            _minHeight = _random.Next(minHeight, 0);
         }
 
         private void MoveUp()
@@ -55,12 +61,6 @@ namespace ObstacleSystem
             {
                 _isUp = true;
             }
-        }
-
-        private void SetHeight()
-        {
-            _maxHeight = _random.Next(0, maxHeight);
-            _minHeight = _random.Next(minHeight, 0);
         }
     }
 }

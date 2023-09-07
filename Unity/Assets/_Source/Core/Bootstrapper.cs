@@ -1,3 +1,4 @@
+using GenerationSystem;
 using UISystem;
 using UnityEngine;
 
@@ -5,6 +6,8 @@ namespace Core
 {
     public class Bootstrapper : MonoBehaviour
     {
+        [SerializeField] private int minDistanceSpawn;
+        [SerializeField] private int maxDistanceSpawn;
         [SerializeField] private ScoreView scoreView;
         
         private Game _game;
@@ -12,7 +15,8 @@ namespace Core
         void Awake()
         {
             _game = new Game();
-            new ScoreController(scoreView);
+            new Score(scoreView);
+            new Generation(minDistanceSpawn, maxDistanceSpawn);
         }
     }
 }

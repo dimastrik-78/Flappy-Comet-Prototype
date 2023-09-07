@@ -9,6 +9,7 @@ namespace PlayerSystem
     public class Player : MonoBehaviour
     {
         [SerializeField] private Rigidbody2D rb;
+        [SerializeField] private float speed;
         [SerializeField] private LayerMask obstacle;
         [SerializeField] private LayerMask bonus;
         
@@ -19,7 +20,7 @@ namespace PlayerSystem
         
         void Awake()
         {
-            _movement = new Movement(rb, transform);
+            _movement = new Movement(rb, transform, speed);
             _movement.Move();
             
             InputSetting();

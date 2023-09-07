@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0d7162-d665-4e54-bdec-6b8db5cecdcf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/DisableObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/DisableObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/ObjectDisable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/ObjectDisable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Utils/Event/SetObjectSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Utils/Event/SetObjectSignal.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/BonusSystem/Bonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/BonusSystem/Bonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/CameraSystem.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/CameraSystem/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/CameraSystem/Movement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/Movement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/CameraSystem/PlayerCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/CameraSystem/PlayerCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/UISystem/ScoreController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/Score.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/UISystem/ScoreController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/Score.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +35,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/BonusSystem/Bonus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/Core/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/ObstacleSystem/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/UISystem/ScoreController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/UISystem/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.6.3/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2UyRxW4iWtKOyKe5teYKWdcihnl" />
@@ -91,6 +118,8 @@
       <workItem from="1693910085716" duration="40000" />
       <workItem from="1693910802688" duration="1734000" />
       <workItem from="1693915183694" duration="306000" />
+      <workItem from="1694074812995" duration="49000" />
+      <workItem from="1694074933094" duration="3780000" />
     </task>
     <servers />
   </component>

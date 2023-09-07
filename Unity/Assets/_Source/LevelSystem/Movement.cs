@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CameraSystem
+namespace LevelSystem
 {
     public class Movement
     {
@@ -14,6 +14,6 @@ namespace CameraSystem
         }
         
         public void Move() 
-            => _rb.velocity = new Vector2(_transform.position.x + 1, _transform.position.y);
+            => _rb.velocity = new Vector2(_transform.position.x + 2, _transform.position.y);
     }
 }

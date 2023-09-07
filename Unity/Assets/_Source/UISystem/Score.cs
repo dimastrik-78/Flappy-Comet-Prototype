@@ -3,13 +3,13 @@ using Utils.Event;
 
 namespace UISystem
 {
-    public class ScoreController
+    public class Score
     {
-        private int _score;
+        private int _ammo;
         
         private readonly ScoreView _view;
         
-        public ScoreController(ScoreView view)
+        public Score(ScoreView view)
         {
             _view = view;
             
@@ -19,17 +19,19 @@ namespace UISystem
         private void SetEvent()
         {
             Signals.Get<TakeBonusSignal>().AddListener(ScoreUpdate);
+            Signals.Get<ResetSceneSignal>().AddListener(DeleteEvent);
         }
 
         private void DeleteEvent()
         {
             Signals.Get<TakeBonusSignal>().RemoveListener(ScoreUpdate);
+            Signals.Get<ResetSceneSignal>().RemoveListener(DeleteEvent);
         }
 
         private void ScoreUpdate()
         {
-            _score++;
-            _view.ScoreUpdate(_score.ToString());
+            _ammo++;
+            _view.ScoreUpdate(_ammo.ToString());
         }
     }
 }
