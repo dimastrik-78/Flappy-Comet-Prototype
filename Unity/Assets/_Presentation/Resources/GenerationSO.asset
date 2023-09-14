@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f180e967bdfc49ff92da7349a64f7ed3, type: 3}
+  m_Name: GenerationSO
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 5359565434989740607, guid: ecd7323b885238042a5cca0a2a77b4f2, type: 3}
+  spawnDistanceX: -5
+  obstaclePrefab: {fileID: 3719239144303627764, guid: d61697f39d7130048a4b18ec25a6f06c, type: 3}
+  countObstacleSpawn: 4
+  bonusPrefab: {fileID: 8076628483321777098, guid: 5ac1d0e72ae04fd42944852ca9a6edba, type: 3}
+  countBonusSpawn: 1
+  minDistance: -3
+  maxDistance: 3

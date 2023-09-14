@@ -17,7 +17,7 @@ namespace Core
             Container.Bind<Game>()
                 .AsSingle()
                 .NonLazy();
-            
+
             Container.Bind<Score>()
                 .AsSingle()
                 .WithArguments(scoreView)

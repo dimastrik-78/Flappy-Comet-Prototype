@@ -1,6 +1,6 @@
 ﻿using Utils;
 using Utils.Event;
-using Zenject;
+using VContainer;
 
 namespace UISystem
 {
@@ -8,13 +8,13 @@ namespace UISystem
     {
         private int _ammo;
         
-        private readonly ScoreView _view;
+        [Inject] private readonly ScoreView _view;
         
-        [Inject]
-        public Score(ScoreView view)
-        {
-            _view = view;
-        }
+        // [Inject]
+        // public Score(ScoreView view)
+        // {
+        //     _view = view;
+        // }
 
         public void OnEvent()
         {

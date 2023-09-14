@@ -12,6 +12,7 @@ namespace LevelSystem
 
         void Awake()
         {
+            //TODO remove incapsulated initialisation
             _movement = new Movement();
             _movement.Move(rb, transform, speed);
         }

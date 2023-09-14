@@ -1,7 +1,7 @@
 using UnityEngine;
 using Utils;
 using Utils.Event;
-using Zenject;
+using VContainer;
 using Random = System.Random;
 
 namespace GenerationSystem
@@ -11,6 +11,7 @@ namespace GenerationSystem
         private readonly Random _random;
         private readonly int _minDistanceSpawn;
         private readonly int _maxDistanceSpawn;
+        private GenerationSO _generationSO;
 
         [Inject]
         public Generation(int minDistanceSpawn, int maxDistanceSpawn)
@@ -18,18 +19,27 @@ namespace GenerationSystem
             _random = new Random();
             _minDistanceSpawn = minDistanceSpawn;
             _maxDistanceSpawn = maxDistanceSpawn;
+            _generationSO = Resources.Load<GenerationSO>("GenerationSO");
         }
         
-        public void GenerationGame(GameObject prefab, Transform position)
+        public void PlayerGeneration()
         {
-            Object.Instantiate(prefab, position.position, position.rotation, null);
+            Object.Instantiate(_generationSO.PlayerPrefab, new Vector3(_generationSO.SpawnDistanceX, 0), Quaternion.Euler(Vector3.zero), null);
         }
 
-        public void GenerationGame(GameObject prefab, int minDistance, int maxDistance, int count)
+        public void BonusGeneration()
         {
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < _generationSO.CountBonusSpawn; i++)
             {
-                Object.Instantiate(prefab, new Vector2(_random.Next(minDistance, maxDistance), 0), Quaternion.Euler(0, 0, 0));
+                Object.Instantiate(_generationSO.BonusPrefab, new Vector2(_random.Next(_generationSO.MinDistance, _generationSO.MaxDistance), 0), Quaternion.Euler(0, 0, 0));
+            }
+        }
+        
+        public void ObstacleGeneration()
+        {
+            for (int i = 0; i < _generationSO.CountObstacleSpawn; i++)
+            {
+                Object.Instantiate(_generationSO.ObstaclePrefab, new Vector2(_random.Next(_generationSO.MinDistance, _generationSO.MaxDistance), 0), Quaternion.Euler(0, 0, 0));
             }
         }
 
