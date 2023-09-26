@@ -1,3 +1,4 @@
+using Core.GlobalStateMachine;
 using UnityEngine.SceneManagement;
 using Utils;
 using Utils.Event;
@@ -9,6 +10,7 @@ namespace Core
         public void StartGame()
         {
             Signals.Get<ResetSceneSignal>().AddListener(ResetScene);
+            Signals.Get<StartGameSignal>().Dispatch();
         }
         
         private void ResetScene()

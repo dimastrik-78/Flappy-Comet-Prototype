@@ -5,14 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0d7162-d665-4e54-bdec-6b8db5cecdcf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/AStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/AStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/IStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/IStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/PlayState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/PlayState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/ResetState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/ResetState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/StartState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Core/GlobalStateMachine/StartState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Utils/Event/StartGameSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Utils/Event/StartGameSignal.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Resources/GenerationSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Resources/GenerationSO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/Bootstrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/GameInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/GameInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/Core/GameLifetimeScope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Core/GameLifetimeScope.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/GenerationSystem/Generation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/GenerationSystem/Generation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/UISystem/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/UISystem/Score.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/LevelSystem/LevelObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/LevelSystem/LevelObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/PlayerSystem/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,31 +45,32 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@af7bd4ecab/Runtime/Internal/ReflectionInjector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@af7bd4ecab/Runtime/Unity/PlayerLoopRunner.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2UyRxW4iWtKOyKe5teYKWdcihnl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Student\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Student\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Student\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Student\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Student\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Student\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Unity.exe" />
@@ -111,12 +124,14 @@
       <workItem from="1694074933094" duration="8774000" />
       <workItem from="1694683684429" duration="6140000" />
       <workItem from="1695721507583" duration="4258000" />
+      <workItem from="1695732928873" duration="2275000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="Vcs.Log.Tabs.Properties">

@@ -543,7 +543,10 @@ MonoBehaviour:
   parentReference:
     TypeName: 
   autoRun: 1
-  autoInjectGameObjects: []
+  autoInjectGameObjects:
+  - {fileID: 519420028}
+  - {fileID: 4536419560670395807}
+  - {fileID: 8737363307804145825}
   scoreView: {fileID: 178324417}
 --- !u!1 &1768315741
 GameObject:

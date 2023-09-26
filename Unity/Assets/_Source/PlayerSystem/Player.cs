@@ -1,6 +1,7 @@
 using UnityEngine;
 using Utils;
 using Utils.Event;
+using VContainer;
 
 namespace PlayerSystem
 {
@@ -11,8 +12,8 @@ namespace PlayerSystem
         [SerializeField] private LayerMask obstacle;
         [SerializeField] private LayerMask bonus;
         
-        private PlayerInputSystem _input;
-        private Movement _movement;
+        [Inject] private PlayerInputSystem _input;
+        [Inject] private Movement _movement;
 
         private bool _isPress;
 

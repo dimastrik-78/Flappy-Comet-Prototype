@@ -1,4 +1,5 @@
 ﻿using GenerationSystem;
+using PlayerSystem;
 using UISystem;
 using UnityEngine;
 using VContainer;
@@ -13,6 +14,9 @@ namespace Core
 
         protected override void Configure(IContainerBuilder builder)
         {
+            builder.Register<PlayerInputSystem>(Lifetime.Singleton);
+            builder.Register<Movement>(Lifetime.Singleton);
+            
             builder.RegisterComponent(scoreView);
             builder.Register<Game>(Lifetime.Singleton);
             builder.Register<Score>(Lifetime.Singleton);
