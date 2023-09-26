@@ -14,11 +14,9 @@ namespace GenerationSystem
         private GenerationSO _generationSO;
 
         [Inject]
-        public Generation(int minDistanceSpawn, int maxDistanceSpawn)
+        public Generation()
         {
             _random = new Random();
-            _minDistanceSpawn = minDistanceSpawn;
-            _maxDistanceSpawn = maxDistanceSpawn;
             _generationSO = Resources.Load<GenerationSO>("GenerationSO");
         }
         
@@ -31,7 +29,9 @@ namespace GenerationSystem
         {
             for (int i = 0; i < _generationSO.CountBonusSpawn; i++)
             {
-                Object.Instantiate(_generationSO.BonusPrefab, new Vector2(_random.Next(_generationSO.MinDistance, _generationSO.MaxDistance), 0), Quaternion.Euler(0, 0, 0));
+                Object.Instantiate(_generationSO.BonusPrefab,
+                    new Vector2(_random.Next(_generationSO.MinDistance, _generationSO.MaxDistance), 0),
+                    Quaternion.Euler(0, 0, 0));
             }
         }
         
@@ -39,7 +39,9 @@ namespace GenerationSystem
         {
             for (int i = 0; i < _generationSO.CountObstacleSpawn; i++)
             {
-                Object.Instantiate(_generationSO.ObstaclePrefab, new Vector2(_random.Next(_generationSO.MinDistance, _generationSO.MaxDistance), 0), Quaternion.Euler(0, 0, 0));
+                Object.Instantiate(_generationSO.ObstaclePrefab,
+                    new Vector2(_random.Next(_generationSO.MinDistance, _generationSO.MaxDistance), 0),
+                    Quaternion.Euler(0, 0, 0));
             }
         }
 
@@ -57,7 +59,7 @@ namespace GenerationSystem
 
         private void SetObject(GameObject gameObject)
         {
-            gameObject.transform.position = new Vector2(Camera.main.ViewportToWorldPoint(new Vector3(1, 0)).x + _random.Next(_minDistanceSpawn, _maxDistanceSpawn), 0);
+            gameObject.transform.position = new Vector2(Camera.main.ViewportToWorldPoint(new Vector3(1, 0)).x + _random.Next(_generationSO.MinDistance, _generationSO.MaxDistance), 0);
             gameObject.SetActive(true);
         }
     }

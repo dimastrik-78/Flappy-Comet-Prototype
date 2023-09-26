@@ -10,13 +10,14 @@ namespace Core
     {
         [Header("Game"), Space(5f)]
         [SerializeField] private ScoreView scoreView;
-        
+
         protected override void Configure(IContainerBuilder builder)
         {
-            builder.RegisterInstance(scoreView);
+            builder.RegisterComponent(scoreView);
             builder.Register<Game>(Lifetime.Singleton);
             builder.Register<Score>(Lifetime.Singleton);
             builder.Register<Generation>(Lifetime.Singleton);
+            builder.RegisterEntryPoint<Bootstrapper>();
         }
     }
 }

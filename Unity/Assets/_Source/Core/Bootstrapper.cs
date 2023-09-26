@@ -14,7 +14,6 @@ namespace Core
 
         public void Start()
         {
-            Debug.Log("2");
             _game.StartGame();
             _score.OnEvent();
             _generation.OnEvent();

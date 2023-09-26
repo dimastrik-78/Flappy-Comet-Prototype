@@ -18,5 +18,5 @@ MonoBehaviour:
   countObstacleSpawn: 4
   bonusPrefab: {fileID: 8076628483321777098, guid: 5ac1d0e72ae04fd42944852ca9a6edba, type: 3}
   countBonusSpawn: 1
-  minDistance: -3
-  maxDistance: 3
+  minDistance: 3
+  maxDistance: 20

@@ -8,13 +8,13 @@ namespace UISystem
     {
         private int _ammo;
         
-        [Inject] private readonly ScoreView _view;
+        private readonly ScoreView _view;
         
-        // [Inject]
-        // public Score(ScoreView view)
-        // {
-        //     _view = view;
-        // }
+        [Inject]
+        public Score(ScoreView view)
+        {
+            _view = view;
+        }
 
         public void OnEvent()
         {
